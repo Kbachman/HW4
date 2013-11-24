@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dawg Pizza version 2.0 Menu">
+    <meta name="author" content="kbachman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Dawg Pizza Menu 2.0</title>
+
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="menu">
+    <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>              
+            </button>
+
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="order.html">Order</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+	<a href="index.html"><img src="img/logo.png" alt="dawg pizza logo" class="logo"></a>
+
+	<section id="menupage">
+		<h1>Dawg Pizza <br> Menu</h1>
+        <p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</p>
+        <ul>
+                <li>Small (12")</li>
+                <li>Medium (14")</li>
+                <li>Large (17")</li>
+        </ul>
+        <h5>All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</h5>
+
+			<div class="pizza-menu">
+				<div class="col-md-6 meat-pizzas"><h3>Meat Pizzas:</h3></div>
+				<div class="col-md-6 vege-pizzas"><h3>Vegetarian Pizzas:</h3></div>
+			</div>
+
+			<div class="drinks-menu"><h3>Drinks:</h3></div>
+			<div class="desserts-menu"><h3>Desserts:</h3></div>
+
+
+		<div class="template pizza-template">
+			<dl>
+				<dt class="pizza-name"></dt>
+				<dd class="pizza-description"></dd>
+				<p class="pizza-prices"></p>
+			</dl>
+
+		</div>
+
+		<div class="template drink-template">
+			<dl>
+				<dt class="drink-name"></dt>
+				<p class="drink-price"></p>
+			</dl>
+		</div>
+
+		<div class="template dessert-template">
+			<dl>
+				<dt class="dessert-name"></dt>
+				<p class="dessert-price"></p>
+			</dl>
+		</div>
+			
+
+
+	</section>
+
+	<footer><p>&#169 Copyright 2013 --- Call Us for delivery: 206-555-1212</p></footer>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+	<script src="javascript/menufill.js"></script>
+</body>
+</html>

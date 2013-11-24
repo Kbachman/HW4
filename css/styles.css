@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+.template {
+	display: none;
+}
+
+.navbar {
+	padding-left: 10%;
+	padding-top: 1em;
+}
+
+#homepage {
+	background-image: url(../img/pizza1.jpg);
+	overflow: scroll;
+}
+#menu {
+	background-image: url(../img/food_pizza.jpg);	
+}
+#aboutus {
+	background-image: url(../img/pizza-oven.jpg);
+}
+#order {
+	background-image: url(../img/pizza-boxed.jpg);
+}
+
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+    margin: 0 0 50px;
+}
+
+.logo {
+	float:left;
+	width: 30%;
+	height: 20%;
+	padding-top: 70px;
+}
+
+
+.flame {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar {
+	background-color: purple;
+	opacity: 0.7;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'libre Baskerville', serif;
+	font-weight: bold;
+	font-size: 400%;
+	color: purple;
+}
+
+section {
+	float: right;
+    width: 80%;
+    background-image: url(../img/brickwall.png);
+    opacity: 0.85;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #EEC900;
+    box-shadow: 6px 6px 6px #000;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    border-radius: 50px;
+    transition:width 1s;
+}
+
+section li {
+        padding: 10px;
+        font-family: 'Libre Baskerville', serif;
+        color: purple;
+        font-size: 150%;
+		font-family: 'Arvo', serif;
+}
+section li a {
+        text-decoration: none;
+        color: red;
+}
+section li a:hover {
+        color: purple;
+        background-color: gold;
+        padding: 5px;
+}
+
+
+
+section h2 {
+    padding: 10px;
+    font-size: 300%;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: brown;
+}
+section h5 {
+	font-family: 'Arvo', serif;
+	font-size: 150%;
+	padding-left: 3px;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #EEC900;
+    background-color: yellow;
+    color: purple;
+}
+
+.meat-pizzas h3 {
+	color: red;
+}
+
+.vege-pizzas h3 {
+	color: green;
+}
+section h4 {
+	text-align: center;
+	font-style: italic;
+	font-size: 200%;
+	color: purple
+}
+section p {
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+	color: brown;
+	font-weight: bold;
+	font-size: 150%
+}
+
+.navbar-default .navbar-brand {
+	color: gold;
+}
+.navbar-default .navbar-nav > li > a {
+	font-weight: bold;
+	font-size: 160%;
+	color: gold;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	background-color: gold;
+	color: purple;
+	font-style: italic;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: gold;
+	color: purple;
+}
+
+
+iframe {
+	margin-left: 25%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: purple;
+   	color: gold;
+   	font-family: 'libre Baskerville', serif;
+   	font-size: 230%;
+   	text-align: center;
+}
+.navbar-toggle {
+	background-color: gold;
+}
+
+.pizza-name {
+	font-family: 'Arvo', serif;
+	font-size: 110%;
+}
+.meat-pizzas .pizza-name {
+	color: red;
+}
+.vege-pizzas .pizza-name {
+	color: green;
+}
+.drinks-menu h3 {
+	font-family: 'Arvo', serif;	
+	color: red;	
+}
+.desserts-menu h3 {
+	font-family: 'Arvo', serif;	
+	color: red;	
+}
+.drink-name {
+	font-family: 'Arvo', serif;	
+	font-size: 120%;
+	color: brown;
+	margin-left: 5%;
+}
+.dessert-name {
+	margin-left: 5%;
+	font-family: 'Arvo', serif;	
+	font-size: 120%;
+	color: brown;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.flame {
+		display: none;
+	}
+	.tube {
+		width: 150px;
+		height: 125px;
+	}
+	.logo {
+		display: none;
+	}
+	section {
+		margin-top: 75px;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	footer {
+		display: none;
+	}
+	section li {
+		font-size: 100%;
+	}
+	section h2 {
+		font-size: 110%;
+	}
+}
