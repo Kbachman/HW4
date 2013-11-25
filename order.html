@@ -41,7 +41,6 @@
 
 		<div class="row">
 			
-
 		    <div class="col-md-6">
 				<div class="pizza-menu">
 					<div class="meat-pizzas"><h3>Meat Pizzas:</h3></div>
@@ -52,9 +51,38 @@
 				<div class="desserts-menu"><h3>Desserts:</h3></div>
 			</div>
 			<div class="col-md-6">
-				<div class="cart-container" id="sticker">
+            	<form method="POST" action="http://dawgpizza.com/orders/" class="form-horizontal cart-form" role="form">
+	                <div class="form-group">
+	                    <label class="col-lg-2 control-label" for="first-name">Name</label>
+	                    <div class="col-lg-10">
+	                        <input type="text" class="form-control" name="first-name" id="first-name" placeholder="full name">
+	                    </div>
+	                </div>
+	                <div class="form-group">
+	                    <label class="col-lg-2 control-label" for="phone-number">Phone Number</label>
+	                    <div class="col-lg-10">
+	                        <input type="text" class="form-control" name="phone-number" id="phone-number" placeholder="Phone Number">
+	                    </div>
+	                </div>
+	                <div class="form-group">
+	                    <label class="col-lg-2 control-label" for="addr-1">Address</label>
+	                    <div class="col-lg-10">
+	                        <input type="text" class="form-control" name="addr-1" id="addr-1" placeholder="street address">
+	                    </div>
+	                    <label class="col-lg-2 control-label" for="zip">Zipcode</label>
+	                    <div class="col-lg-10">
+	                    	<input type="text" class="form-control" name="zip" id="zip" placeholder="zipcode">
+	                    </div>
+	                </div>
+                </form>
+
+
+
+
+
+				<div id="sticker">
 		            <h2>Your Cart</h2>
-		            <div class="cart-items-container"></div>
+		            <div class="cart-container"></div>
 		            <div class="cart-footer">
 		                <div class="row total-row">
 		                    <div class="col-xs-10">
@@ -64,12 +92,25 @@
 		                        $<span class="total-price"></span>
 		                    </div>
 		                    <div class="col-xs-10">
+		                    	Tax:
+		                    </div>
+		                    <div class="col-xs-2">
+		                    	$<span class="tax-price"></span>
+		                    </div>
+		                    <div class="col-xs-10">
+		                    	Grand Total:
+		                    </div>
+		                    <div class="col-xs-2">
+		                    	$<span class="grand-total-price"></span>
+		                    </div>
+		                    <div class="col-xs-10">
 		                    	Minimum $20 Order for delivery!
 		                    </div>
 		                </div>
 		                <div class="row">
 		                    <div class="col-xs-12 button-row">
-		                        <button type="button" class="btn btn-primary place-order">Place My Order</button>
+		                    	<button type="button" class="start-over btn btn-primary place-order">Start Over</button>
+		                        <button type="button" class="place-order btn btn-primary place-order">Place My Order</button>
 		                    </div>
 		                </div>                        
 		            </div>
@@ -82,9 +123,9 @@
 				<dt class="pizza-name"></dt>
 				<dd class="pizza-description"></dd>
 			<div class="btn-group">
-  				<button type="button" data-type="pizza" data-size="small" class="add-to-cart btn btn-default pizza-price-small">Small - $</button>
-			  	<button type="button" data-type="pizza" data-size="medium" class="add-to-cart btn btn-default pizza-price-med">Medium - $</button>
-			  	<button type="button" data-type="pizza" data-size="large" class="add-to-cart btn btn-default pizza-price-large">Large - $</button>
+  				<button type="button" class="add-to-cart btn btn-default small-pizza">Small - $</button>
+			  	<button type="button" class="add-to-cart btn btn-default medium-pizza">Medium - $</button>
+			  	<button type="button" class="add-to-cart btn btn-default large-pizza">Large - $</button>
 			</div>
 			</dl>
 
@@ -93,16 +134,28 @@
 		<div class="template drink-template">
 			<dl>
 				<dt class="drink-name"></dt>
-				<button type="button" data-type="drink" class="add-to-cart btn btn-default drink-price"></button>
+				<button type="button" class="add-to-cart btn btn-default drink-price"></button>
 			</dl>
 		</div>
 
 		<div class="template dessert-template">
 			<dl>
 				<dt class="dessert-name"></dt>
-				<button type="button" data-type="dessert" class="add-to-cart btn btn-default dessert-price"></button>
+				<button type="button" class="add-to-cart btn btn-default dessert-price"></button>
 			</dl>
 		</div>
+
+        <!-- cart item template -->
+        <div class="cart-item-template cart-item row">
+            <div class="col-xs-10">
+                <p><button type="button" class="btn btn-default btn-xs remove-item">&times;</button> 
+                    <span class="name"></span> <span class="size"></span>
+                </p>
+            </div>
+            <div class="col-xs-2 col-price">
+                <p>$<span class="price"></span></p>
+            </div>
+        </div>
 			
 	</section>
 
