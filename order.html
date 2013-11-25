@@ -52,6 +52,7 @@
 			</div>
 			<div class="col-md-6">
             	<form method="POST" action="http://dawgpizza.com/orders/" class="form-horizontal cart-form" role="form">
+            	<input type="hidden" name="cart">
 	                <div class="form-group">
 	                    <label class="col-lg-2 control-label" for="first-name">Name</label>
 	                    <div class="col-lg-10">
@@ -82,7 +83,7 @@
 
 				<div id="sticker">
 		            <h2>Your Cart</h2>
-		            <div class="cart-container"></div>
+		            <div class="cart-container" id="cart-container"></div>
 		            <div class="cart-footer">
 		                <div class="row total-row">
 		                    <div class="col-xs-10">

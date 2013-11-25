@@ -227,6 +227,10 @@ footer {
   border-radius: 50px;
   margin-top: 150px;
 }
+.remove-item {
+	float: left;
+	padding-left: 10px;
+}
 
 
 

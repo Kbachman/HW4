@@ -24,7 +24,7 @@ $(function(){
         //use the attributes on the button to construct
         //a new cart item object that we can add to the
         //cart's items array
-		if (this.getAttribute('data-type') === "Pizza") {
+		if (this.getAttribute('data-type') === "pizza") {
                 var newCartItem = {
                     type: this.getAttribute('data-type'),
                     name: this.getAttribute('data-name'),
@@ -54,8 +54,6 @@ $(function(){
         //other grouping element on the page that has a
         //style class of 'cart-container'
         renderCart(cart, $('.cart-container'));
-
-        console.log(cart.items);
 
     });
 
@@ -177,7 +175,6 @@ function postCart(cart, cartForm) {
     //find the input in the form that has the name of 'cart'    
     //and set it's value to a JSON representation of the cart model
     cartForm.find('input[name="cart"]').val(JSON.stringify(cart));
-
     //submit the form--this will navigate to an order confirmation page
     cartForm.submit();
 
@@ -203,20 +200,20 @@ function renderPizza() {
 		instance.find('.small-pizza').attr({
 			'data-name': pizza.name,
 			'data-price': pizza.prices[0],
-			'data-type': "Pizza",
-			'data-size': "Small"
+			'data-type': "pizza",
+			'data-size': "small"
 		});
 		instance.find('.medium-pizza').attr({
 			'data-name': pizza.name,
 			'data-price': pizza.prices[1],
-			'data-type': "Pizza",
-			'data-size': "Medium"
+			'data-type': "pizza",
+			'data-size': "medium"
 		});
 		instance.find('.large-pizza').attr({
 			'data-name': pizza.name,
 			'data-price': pizza.prices[2],
-			'data-type': "Pizza",
-			'data-size': "Large"
+			'data-type': "pizza",
+			'data-size': "large"
 		});
 
 		instance.removeClass('template');
