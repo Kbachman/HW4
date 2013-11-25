@@ -31,6 +31,90 @@
 		  </div>
 		</div>
 	</div>
+	<a href="index.html"><img src="img/logo.png" alt="dawg pizza logo" class="logo"></a>
 
+	<section id="orderPage">
+
+
+		<h1>Dawg Pizza <br> Menu</h1>
+        <p>We deliver within the Seattle City Limits from noon to 11:00 PM dailey, we accept cash or credit cards on delivery!</p>
+
+		<div class="row">
+			
+
+		    <div class="col-md-6">
+				<div class="pizza-menu">
+					<div class="meat-pizzas"><h3>Meat Pizzas:</h3></div>
+					<div class="vege-pizzas"><h3>Vegetarian Pizzas:</h3></div>
+				</div>
+
+				<div class="drinks-menu"><h3>Drinks:</h3></div>
+				<div class="desserts-menu"><h3>Desserts:</h3></div>
+			</div>
+			<div class="col-md-6">
+				<div class="cart-container" id="sticker">
+		            <h2>Your Cart</h2>
+		            <div class="cart-items-container"></div>
+		            <div class="cart-footer">
+		                <div class="row total-row">
+		                    <div class="col-xs-10">
+		                        Total:
+		                    </div>
+		                    <div class="col-xs-2">
+		                        $<span class="total-price"></span>
+		                    </div>
+		                    <div class="col-xs-10">
+		                    	Minimum $20 Order for delivery!
+		                    </div>
+		                </div>
+		                <div class="row">
+		                    <div class="col-xs-12 button-row">
+		                        <button type="button" class="btn btn-primary place-order">Place My Order</button>
+		                    </div>
+		                </div>                        
+		            </div>
+	            </div>
+	        </div>
+
+	    </div>
+		<div class="template pizza-template">
+			<dl>
+				<dt class="pizza-name"></dt>
+				<dd class="pizza-description"></dd>
+			<div class="btn-group">
+  				<button type="button" data-type="pizza" data-size="small" class="add-to-cart btn btn-default pizza-price-small">Small - $</button>
+			  	<button type="button" data-type="pizza" data-size="medium" class="add-to-cart btn btn-default pizza-price-med">Medium - $</button>
+			  	<button type="button" data-type="pizza" data-size="large" class="add-to-cart btn btn-default pizza-price-large">Large - $</button>
+			</div>
+			</dl>
+
+		</div>
+
+		<div class="template drink-template">
+			<dl>
+				<dt class="drink-name"></dt>
+				<button type="button" data-type="drink" class="add-to-cart btn btn-default drink-price"></button>
+			</dl>
+		</div>
+
+		<div class="template dessert-template">
+			<dl>
+				<dt class="dessert-name"></dt>
+				<button type="button" data-type="dessert" class="add-to-cart btn btn-default dessert-price"></button>
+			</dl>
+		</div>
+			
+	</section>
+
+	<footer><p>&#169 Copyright 2013 --- Call Us for delivery: 206-555-1212</p></footer>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+	<script src="javascript/orderfill.js"></script>
+	<script type="text/javascript" src="javascript/jquery.sticky.js"></script>
 </body>
 </html>
