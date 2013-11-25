@@ -15,6 +15,7 @@ $(function(){
         address1: null,
         zip: null,
         phone: null,
+        nextUrl: 'http://students.washington.edu/kbachman/info343/hw4/order.html',
         items: [] //empty array
     }; //cart data
 
